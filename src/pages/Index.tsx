@@ -26,7 +26,7 @@ const Index = () => {
     >
       <div className="antialiased max-w-screen min-h-svh bg-slate-1 text-slate-12">
         <MeshGradient
-          colors={["#001c80", "#1ac7ff", "#04ffb1", "#ff1ff1"]}
+          colors={["#0d0015", "#6600cc", "#ff007a", "#ff6600"]}
           style={{
             position: "fixed",
             top: 0,
@@ -42,29 +42,28 @@ const Index = () => {
               <WaitlistWrapper
                 logo={{
                   src: "/logo.svg",
-                  alt: "Launchpad",
+                  alt: "DJ Booking",
                 }}
-                copyright="При поддержке"
-                copyrightLink={{ text: "Ваша компания", href: "#" }}
+                copyright="© 2026"
+                copyrightLink={{ text: "DJ Booking", href: "#" }}
                 showThemeSwitcher={true}
               >
                 <div className="space-y-1">
                   <h1 className="text-2xl sm:text-3xl font-medium text-slate-12 whitespace-pre-wrap text-pretty">
-                    Лист ожидания
+                    🎧 Забронируй диджея на мероприятие
                   </h1>
                   <p className="text-slate-10 tracking-tight text-pretty">
-                    Узнайте первыми о запуске. Получите ранний доступ и
-                    эксклюзивные обновления.
+                    Свадьба, корпоратив, вечеринка — оставь заявку и мы свяжемся с тобой в течение часа.
                   </p>
                 </div>
                 <div className="px-1 flex flex-col w-full self-stretch">
                   <WaitlistForm
                     onSubmit={handleSubmit}
-                    placeholder="Введите email"
+                    placeholder="Твой email для связи"
                     buttonCopy={{
-                      idle: "Записаться",
+                      idle: "Забронировать",
                       loading: "Отправка...",
-                      success: "Готово!",
+                      success: "Заявка принята!",
                     }}
                   />
                 </div>
